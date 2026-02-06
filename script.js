@@ -1,10 +1,10 @@
-const elements = document.querySelectorAll(".fade-up");
+const items = document.querySelectorAll(".fade-up");
 
 window.addEventListener("scroll", () => {
-  elements.forEach(el => {
-    const pos = el.getBoundingClientRect().top;
+  items.forEach(item => {
+    const pos = item.getBoundingClientRect().top;
     if (pos < window.innerHeight - 100) {
-      el.classList.add("show");
+      item.classList.add("show");
     }
   });
 });
